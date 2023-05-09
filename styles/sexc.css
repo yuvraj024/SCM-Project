@@ -1,0 +1,205 @@
+
+:root {
+  background-color: #000000;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+.heading{color: #fff;
+text-align: center;}
+
+button, a {
+  font-family: "Montserrat", san-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffff;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #030033;
+  box-shadow: 0px 0px 20px 0;
+}
+
+.logo {
+  color: #ffffff;
+  cursor: pointer;
+  left: 150px;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* yeh apna registration forms */
+  .body1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  }
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 320px;
+  }
+  
+  .portfolio h2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 50px auto 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #111;
+  }
+  .card {
+    width: 25%;
+    overflow: hidden;
+    position: relative;
+  }
+  .card .content {
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    bottom: -100px;
+    transition: all 0.7s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100px;
+    background: #111;
+  }
+  .card .image {
+    z-index: 1;
+    height: 100%;
+  }
+  .card img {
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease;
+    transform: scale(1.2);
+  }
+  
+  .card:hover .content {
+    bottom: 0px;
+    color: #fff;
+  }
+  
+  .card:hover .image img {
+    transform: scale(1);
+  }
+  
+  .card .content span:first-child {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .card .content span:last-child {
+    font-size: 14px;
+    color: #18cfab;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+/*   
+  @media screen and (max-width: 768px) {
+    .card {
+    width: 50%;
+    }
+    .card .content {
+      bottom: 0;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card {
+    width: 100%;
+    }
+  } */
+  /* yeh apna footer  */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #contact a {
+    color: #030303;
+    margin: 10px;
+  }
+  
+  #contact {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #030033;
+  }
+  
+  #icon {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.5s;
+  }
+  
+  #icon-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #icon:hover {
+    transform: translateY(-5px);
+  }
+  
+  #contact p {
+    font-size: 14px;
+  }

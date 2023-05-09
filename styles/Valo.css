@@ -1,5 +1,5 @@
 :root {
-    background-color: #141414;
+    background-color: #000000;
     box-sizing: border-box;
   }
   
@@ -81,11 +81,11 @@
     font-size: 35px;
     line-height: 45px;
     color: rgb(255, 255, 255);
-    background: #141414;
+    background: #000000;
   }
   
   .container {
-    max-width: 75%;
+    max-width: 50%;
     width: 100%;
     margin: 0 auto;
     position: relative;
@@ -101,7 +101,7 @@
   }
   /* box */
   #contact_form {
-    background: #141414;
+    background: #000000;
     padding: 25px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   }
