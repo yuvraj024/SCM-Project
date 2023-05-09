@@ -68,7 +68,6 @@ button:hover {
   width: 80vw;
   margin: 40px auto;
   max-width: 1000px;
-  padding-top: 25px;
   color: #f0ffff;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -128,12 +127,12 @@ button:hover {
 
 .heading {
 
-  font-size: 4rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 400;
   line-height: 1.5;
   text-align: center;
-  padding: 3.5rem 0;
   color: #ffffff;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
 .heading span {
@@ -165,7 +164,7 @@ button:hover {
 .gallery-image:hover {
   transform: scale(1.15);
 }
-
+/*footeer*/
 ul {
   margin: 0;
   padding: 0;
@@ -413,3 +412,4 @@ section-header {
 }
 
 
+/*our partners*/
