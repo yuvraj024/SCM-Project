@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto&display=swap');
 :root {
-  background-color: #141414;
+  background-color: #000000;
   box-sizing: border-box;
 }
 
@@ -69,7 +70,7 @@ button:hover {
   margin: 40px auto;
   max-width: 1000px;
   color: #f0ffff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
 }
 
@@ -412,4 +413,3 @@ section-header {
 }
 
 
-/*our partners*/
