@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #contact a {
+    color: #030303;
+    margin: 10px;
+    text-decoration: none;
+  }
+  
+  #contact {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #030303;
+  }
+  
+  #icon {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s, box-shadow 0.5s;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 12%), 0 2px 2px rgb(0 0 0 / 24%);
+  }
+  
+  #icon-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 5px 5px rgb(0 0 0 / 12%), 0 3px 5px rgb(0 0 0 / 24%);
+  }
+  
+  #contact p {
+    font-size: 14px;
+  }
