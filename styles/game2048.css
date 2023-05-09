@@ -1,0 +1,268 @@
+:root {
+    background-color: #000000;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+button,
+a {
+    font-family: "Montserrat", san-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #030033;
+    box-shadow: 0px 0px 20px 0;
+}
+
+.logo {
+    color: #ffffff;
+    cursor: pointer;
+    left: 150px;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #0088a9;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #0088a9;
+}
+/* css for popup */
+.popup-container * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.popup-container {
+    display: inline-block;
+}
+.popup-container .popup-button {
+    background: #0088a9;
+    color: #fff;
+    padding: 9px 20px;
+    border-radius: 3px;
+    display: block;
+    cursor: pointer;
+}
+.popup-container .popup-button:hover {
+    background: #006781;
+}
+/* background translucent black */
+.popup-container .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: 250ms all;
+}
+/* popup box base color */
+.popup-container .popup .popup-inner {
+    width: 400px;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #030033;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 150%;
+    transition: 250ms all;
+    border-radius: 10px;
+}
+/*  popup box */
+.popup-container .popup .popup-inner .popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.popup-container .popup .popup-inner .popup-title h6 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}
+/* close button*/
+.popup-container .popup .popup-inner .popup-title .popup-close-btn {
+    cursor: pointer;
+    background: #0088a9;
+    display: block;
+    line-height: 30px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #222;
+    border-radius: 7px;
+    color: #ffffff;
+}
+.popup-container .popup .popup-inner .popup-title .popup-close-btn:hover {
+    background: #006781;
+}
+.popup-container .popup .popup-inner .popup-content ul li {
+    margin-bottom: 10px;
+}
+.popup-container .popup .popup-inner .popup-content ul li:last-child {
+    margin-bottom: 0;
+}
+/* input box size */
+.popup-container .popup .popup-inner .popup-content ul li input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    line-height: 34px;
+    padding: 0 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+/* login button in popup */
+.popup-container .popup .popup-inner .popup-content ul li button {
+    width: 100%;
+    line-height: 34px;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+}
+.popup-container .popup .popup-inner .popup-content ul li button:hover {
+    background: #444;
+}
+/* makes outside of popup cursor to pointer  */
+.popup-container .popup .transparent-label {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    cursor: pointer;
+}
+.popup-container > input {
+    display: none;
+}
+/* makes pop up work */
+.popup-container > input:checked + .popup {
+    opacity: 1;
+    visibility: visible;
+}
+/* brings pop up in middle of screen */
+.popup-container > input:checked + .popup .popup-inner {
+    top: 50%;
+}
+#header {
+    color: white;
+    text-align: center;
+    margin: bottom 5px; ;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 50px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(37, 37, 37);
+}
+
+.grid div {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+}
+.zero{
+    background-color: #0088a9;
+    color: white;
+}
+/* footer */
+footer{
+margin-top: 2%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #contact a {
+    color: #030303;
+    margin: 10px;
+  }
+  
+  #contact {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #030033;
+  }
+  
+  #icon {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.5s;
+  }
+  
+  #icon-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #icon:hover {
+    transform: translateY(-5px);
+  }
+  
+  #contact p {
+    font-size: 14px;
+  }

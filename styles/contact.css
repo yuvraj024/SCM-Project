@@ -60,6 +60,134 @@ button {
   cursor: pointer;
   border: none;
 }
+  /* css for popup */
+  .popup-container * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  .popup-container {
+    display: inline-block;
+  }
+  .popup-container .popup-button {
+    background: #0088a9;
+    color: #fff;
+    padding: 9px 20px;
+    border-radius: 3px;
+    display: block;
+    cursor: pointer;
+  }
+  .popup-container .popup-button:hover {
+    background: #006781;
+  }
+  /* background translucent black */
+  .popup-container .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: 250ms all;
+  }
+  /* popup box base color */
+  .popup-container .popup .popup-inner {
+    width: 400px;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #030033;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 150%;
+    transition: 250ms all;
+    border-radius: 10px;
+  }
+  /*  popup box */
+  .popup-container .popup .popup-inner .popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .popup-container .popup .popup-inner .popup-title h6 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  /* close button*/
+  .popup-container .popup .popup-inner .popup-title .popup-close-btn {
+    cursor: pointer;
+    background: #0088a9;
+    display: block;
+    line-height: 30px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #222;
+    border-radius: 7px;
+    color: #ffffff;
+  }
+  .popup-container .popup .popup-inner .popup-title .popup-close-btn:hover {
+      background: #006781;
+  }
+  .popup-container .popup .popup-inner .popup-content ul li {
+    margin-bottom: 10px;
+  }
+  .popup-container .popup .popup-inner .popup-content ul li:last-child {
+    margin-bottom: 0;
+  }
+  /* input box size */
+  .popup-container .popup .popup-inner .popup-content ul li input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    line-height: 34px;
+    padding: 0 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 600;
+  }
+  /* login button in popup */
+  .popup-container .popup .popup-inner .popup-content ul li button {
+    width: 100%;
+    line-height: 34px;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+  }
+  .popup-container .popup .popup-inner .popup-content ul li button:hover {
+    background: #444;
+  }
+  /* makes outside of popup cursor to pointer  */
+  .popup-container .popup .transparent-label {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    cursor: pointer;
+  }
+  .popup-container > input {
+    display: none;
+  }
+  /* makes pop up work */
+  .popup-container > input:checked + .popup {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* brings pop up in middle of screen */
+  .popup-container > input:checked + .popup .popup-inner {
+    top: 50%;
+  }
+  
 
 button:hover {
   background-color: rgba(0, 136, 169, 0.8);
