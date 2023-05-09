@@ -201,7 +201,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    padding: 50px;
+    padding: 10px;
     width: 400px;
     height: 400px;
     background-color: rgb(37, 37, 37);
